@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: CeraPro;
+  font-weight: 400;
+  font-style: normal;
+  src: url(/fonts/Cera-Pro-Light.otf) format("otf");
+}
+@font-face {
+  font-family: CeraPro;
+  font-weight: 500;
+  font-style: normal;
+  src: url(/fonts/Cera-Pro-Medium.otf) format("otf");
+}
+@font-face {
+  font-family: CeraPro;
+  font-weight: 700;
+  font-style: normal;
+  src: url(/fonts/Cera-Pro-Bold.otf) format("otf");
+}
+:root {
+  font-family: "Cera Round Pro", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}

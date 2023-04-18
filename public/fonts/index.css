@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "CeraPro";
+  font-weight: 400;
+  font-style: normal;
+  src: local("CeraPro"), url("Cera Pro Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "CeraPro";
+  font-weight: 500;
+  font-style: normal;
+  src: local("CeraPro"), url("Cera Pro Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "CeraPro";
+  font-weight: 700;
+  font-style: normal;
+  src: local("CeraPro"), url("Cera Pro Bold.otf") format("opentype");
+}
