@@ -1,14 +1,16 @@
 import React from "react";
 import Carousel from "../components/Carousel";
-import { carouselItems, voucherItems } from "../constants";
+import { carouselItems, promotionItems, voucherItems } from "../constants";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import SimpleCarousel from "../components/SimpleCarousel";
 import Voucher from "../components/Voucher";
+import Promotion from "../components/Promotion";
+import Product from "../components/Product";
 
 export default function Home() {
   return (
     <>
-      <div className="px-6 md:px-16 py-6 md:flex">
+      <div className="px-6 md:px-8 lg:px-16 py-6 md:flex">
         <div className="w-full">
           <Carousel
             items={carouselItems}
@@ -31,8 +33,14 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="px-6 md:px-16 md:flex w-full">
+      <div className="px-6 md:px-8 lg:px-16 md:flex w-full">
         <Voucher datas={voucherItems} />
+      </div>
+      <div className="px-6 md:px-8 lg:px-16 hidden md:flex w-full">
+        <Promotion datas={promotionItems} />
+      </div>
+      <div className="px-6 md:px-8 lg:px-16 md:flex flex-col w-full md:bg-[#F4F1E9]">
+        <Product />
       </div>
     </>
   );

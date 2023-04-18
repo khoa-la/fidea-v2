@@ -22,7 +22,7 @@ export default function Voucher({ datas }: Props) {
         >
           <div className="w-full h-[180px] rounded-[30px] bg-inherit border border-[#235D55]">
             <div className="px-4 md:px-2 py-3 flex items-center justify-between">
-              <div className="min-w-[189px] md:min-w-[130px] lg:min-w-[200px] h-[36px] rounded-full border border-[#235D55] flex items-center justify-center text-[#235D55] font-medium text-xl md:text-base md:mr-1 lg:text-xl">
+              <div className="min-w-[220px] md:min-w-[160px] lg:min-w-[200px] h-[36px] rounded-full border border-[#235D55] flex items-center justify-center text-[#235D55] font-medium text-xl md:text-base md:mr-1 lg:text-xl">
                 {item.title}
               </div>
               <div>
