@@ -28,7 +28,7 @@ export default function Product() {
       <h2 className="text-center py-4 text-3xl">Popular Products</h2>
       <Box
         component={"div"}
-        className="hidden md:flex my-1 justify-between items-center h-[1350px] lg:h-[950px]"
+        className="hidden md:flex my-1 justify-between items-center h-[1350px] lg:h-[950px] 2xl:h-[1250px]"
       >
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           {datas?.map((data, index) => (

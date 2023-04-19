@@ -10,67 +10,36 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import React, { useState } from "react";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import { useBreakpoint } from "../hooks/useBreakpoint";
+import React from "react";
 
 type Props = {
-  data?: any;
-  key?: number;
+  data: any;
 };
 
-export default function ProductItem({ data, key }: Props) {
-  const [isHover, setIsHover] = useState(false);
-  const isDesktop = useBreakpoint("md");
-
+export default function ProductSliderItem({ data }: Props) {
   return (
-    <Grid item xs={6} md={4} lg={4} sx={{ mt: 2, mb: 4 }} key={key}>
-      <Card className="w-80 lg:w-full mr-4">
-        <div
-          onMouseEnter={() => setIsHover(true)}
-          onMouseLeave={() => setIsHover(false)}
-          className="relative"
-        >
+    <Grid item xs={6} md={4} lg={4} sx={{ mt: 2, mb: 4 }}>
+      <Card className="w-80 2xl:w-[800px] mr-4">
+        <div className="relative">
           <CardMedia
-            image={`${isHover ? data.imgUrl2 : data.imgUrl1}`}
+            image={`${data.imgUrl}`}
             title="green iguana"
             className="h-52 2xl:h-96"
           />
-          <div className="absolute w-[53px] h-[75px] top-0 right-0 text-center items-center flex flex-col justify-center">
+          <div className="absolute w-[53px] h-[75px] bg-[#FACF19] top-0 left-0 text-center items-center flex flex-col justify-center">
             <div className="text-center items-center">
               <svg
-                width="22"
-                height="25"
-                viewBox="0 0 22 25"
+                width="12"
+                height="22"
+                viewBox="0 0 12 22"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path
-                  d="M0.898407 3.99763C0.898407 2.17583 2.37526 0.698975 4.19706 0.698975C6.01885 0.698975 7.49571 2.17583 7.49571 3.99763C7.49571 5.81942 6.01885 7.29628 4.19706 7.29628C2.37526 7.29628 0.898407 5.81942 0.898407 3.99763Z"
-                  fill="#2D264B"
-                />
-                <path
-                  d="M10.4945 3.99763C10.4945 3.50077 10.8973 3.09799 11.3941 3.09799L20.9902 3.09799C21.487 3.09799 21.8898 3.50077 21.8898 3.99763C21.8898 4.49448 21.487 4.89726 20.9902 4.89726L11.3941 4.89726C10.8973 4.89726 10.4945 4.49448 10.4945 3.99763Z"
-                  fill="#2D264B"
-                />
-                <path
-                  d="M15.2925 12.3942C15.2925 10.5724 16.7694 9.09554 18.5912 9.09554C20.413 9.09554 21.8898 10.5724 21.8898 12.3942C21.8898 14.216 20.413 15.6928 18.5912 15.6928C16.7694 15.6928 15.2925 14.216 15.2925 12.3942Z"
-                  fill="#2D264B"
-                />
-                <path
-                  d="M0.898407 12.3942C0.898407 11.8973 1.30119 11.4946 1.79804 11.4946L11.3941 11.4946C11.891 11.4946 12.2937 11.8973 12.2937 12.3942C12.2937 12.891 11.891 13.2938 11.3941 13.2938L1.79804 13.2938C1.30119 13.2938 0.898407 12.891 0.898407 12.3942Z"
-                  fill="#2D264B"
-                />
-                <path
-                  d="M0.898407 20.7908C0.898407 18.969 2.37526 17.4921 4.19706 17.4921C6.01885 17.4921 7.49571 18.969 7.49571 20.7908C7.49571 22.6125 6.01885 24.0894 4.19706 24.0894C2.37526 24.0894 0.898407 22.6125 0.898407 20.7908Z"
-                  fill="#2D264B"
-                />
-                <path
-                  d="M10.4945 20.7908C10.4945 20.2939 10.8973 19.8911 11.3941 19.8911H20.9902C21.487 19.8911 21.8898 20.2939 21.8898 20.7908C21.8898 21.2876 21.487 21.6904 20.9902 21.6904H11.3941C10.8973 21.6904 10.4945 21.2876 10.4945 20.7908Z"
-                  fill="#2D264B"
-                />
+                <path d="M5 14H0L7 0V8H12L5 22V14Z" fill="black" />
               </svg>
             </div>
+            <div className="font-bold">{data.discount}%</div>
           </div>
           <div className="absolute w-[53px] h-[75px] bottom-0 right-0 text-center items-center flex flex-col justify-center">
             <div className="text-center items-center">

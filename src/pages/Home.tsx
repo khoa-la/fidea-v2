@@ -1,11 +1,20 @@
 import React from "react";
 import Carousel from "../components/Carousel";
-import { carouselItems, promotionItems, voucherItems } from "../constants";
+import {
+  carouselItems,
+  productBannerSlides,
+  promotionItems,
+  voucherItems,
+} from "../constants";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import SimpleCarousel from "../components/SimpleCarousel";
 import Voucher from "../components/Voucher";
 import Promotion from "../components/Promotion";
 import Product from "../components/Product";
+import Product2 from "../components/Product2";
+import Banner from "../components/Banner";
+import Banner2 from "../components/Banner2";
+import ProductSlide from "../components/ProductSlide";
 
 export default function Home() {
   return (
@@ -41,6 +50,18 @@ export default function Home() {
       </div>
       <div className="px-6 md:px-8 lg:px-16 md:flex flex-col w-full md:bg-[#F4F1E9]">
         <Product />
+      </div>
+      <div className="px-6 md:px-8 lg:px-16 md:flex flex-col w-full md:bg-[#ECF1F4]">
+        <Product2 />
+      </div>
+      <div className="px-6 md:px-0 md:flex flex-col w-full pt-6">
+        <Banner />
+      </div>
+      <div className="w-full bg-black md:bg-inherit">
+        <Banner2 />
+      </div>
+      <div className="px-6 md:px-8 lg:px-16 w-full pt-6">
+        <ProductSlide />
       </div>
     </>
   );

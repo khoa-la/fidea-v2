@@ -202,3 +202,77 @@ export const productItems = [
     ],
   },
 ];
+
+export const productSliderItems = [
+  {
+    id: 1,
+    imgUrl: "/assets/items/table-8.png",
+    discount: -25,
+  },
+  {
+    id: 2,
+    imgUrl: "/assets/items/sofa-1.png",
+    discount: -39,
+  },
+  {
+    id: 3,
+    imgUrl: "/assets/items/sofa-2.png",
+    discount: -40,
+  },
+  {
+    id: 4,
+    imgUrl: "/assets/items/sofa-3.png",
+    discount: -20,
+  },
+];
+
+export const productBannerSlides = [
+  {
+    id: 1,
+    imageUrl: "/assets/items/banner-1.png",
+    altText: "",
+  },
+  {
+    id: 2,
+    imageUrl: "/assets/items/banner-2.png",
+    altText: "",
+  },
+  {
+    id: 3,
+    imageUrl: "/assets/items/banner-7.png",
+    altText: "",
+  },
+];
+
+export const productFilterSlides = [
+  {
+    id: 1,
+    imageUrl: "/assets/items/sofa-4.png",
+    altText: "",
+    title: "Sofas",
+  },
+  {
+    id: 2,
+    imageUrl: "/assets/items/sofa-5.png",
+    altText: "",
+    title: "Armchairs",
+  },
+  {
+    id: 3,
+    imageUrl: "/assets/items/table-9.png",
+    altText: "",
+    title: "Chairs",
+  },
+  {
+    id: 4,
+    imageUrl: "/assets/items/table-10.png",
+    altText: "",
+    title: "Tables",
+  },
+  {
+    id: 5,
+    imageUrl: "/assets/items/shelve-1.png",
+    altText: "",
+    title: "Storage",
+  },
+];
