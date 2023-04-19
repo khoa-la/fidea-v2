@@ -15,6 +15,8 @@ import Product2 from "../components/Product2";
 import Banner from "../components/Banner";
 import Banner2 from "../components/Banner2";
 import ProductSlide from "../components/ProductSlide";
+import RoomSlide from "../components/RoomSlide";
+import Banner3 from "../components/Banner3";
 
 export default function Home() {
   return (
@@ -62,6 +64,12 @@ export default function Home() {
       </div>
       <div className="px-6 md:px-8 lg:px-16 w-full pt-6">
         <ProductSlide />
+      </div>
+      <div className="px-6 md:px-8 lg:px-16 w-full pt-6 bg-[#ECF1F4]">
+        <RoomSlide />
+      </div>
+      <div className="px-6 md:px-8 lg:px-16 w-full pt-6">
+        <Banner3 />
       </div>
     </>
   );

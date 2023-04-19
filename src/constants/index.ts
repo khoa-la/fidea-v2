@@ -276,3 +276,82 @@ export const productFilterSlides = [
     title: "Storage",
   },
 ];
+
+export const optionSlideItems = [
+  {
+    id: 1,
+    imgUrl: "/assets/items/color-1.png",
+    description: "Grey",
+  },
+  {
+    id: 2,
+    imgUrl: "/assets/items/color-2.png",
+    description: "Wood",
+  },
+  {
+    id: 3,
+    imgUrl: "/assets/items/color-3.png",
+    description: "Velvet",
+  },
+  {
+    id: 4,
+    imgUrl: "/assets/items/color-4.png",
+    description: "Leather",
+  },
+];
+
+export const roomSlideItems = [
+  {
+    id: 1,
+    imgUrl: "/assets/items/room-10.png",
+    title: "Living Room",
+  },
+  {
+    id: 2,
+    imgUrl: "/assets/items/room-11.png",
+    title: "Dining & Kitchen",
+  },
+  {
+    id: 3,
+    imgUrl: "/assets/items/room-12.png",
+    title: "Bedroom",
+  },
+  {
+    id: 4,
+    imgUrl: "/assets/items/room-13.png",
+    title: "Children Room",
+  },
+];
+
+export const roomOptionSlideItems = [
+  {
+    id: 1,
+    imgUrl: "/assets/items/room-14.png",
+    description: "Scandinavian",
+  },
+  {
+    id: 2,
+    imgUrl: "/assets/items/room-15.png",
+    description: "Minimalism",
+  },
+  {
+    id: 3,
+    imgUrl: "/assets/items/room-16.png",
+    description: "Modern",
+  },
+  {
+    id: 4,
+    imgUrl: "/assets/items/room-17.png",
+    description: "Classic",
+  },
+  {
+    id: 5,
+    imgUrl: "/assets/items/room-18.png",
+    description: "Luxury",
+  },
+  {
+    id: 6,
+    imgUrl: "/assets/items/room-19.png",
+    description: "Retro",
+  },
+];

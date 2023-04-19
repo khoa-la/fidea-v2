@@ -5,17 +5,16 @@ type Props = {
   data: any;
 };
 
-export default function ProductSlideItem({ data }: Props) {
+export default function RoomSlideItem({ data }: Props) {
   return (
     <>
       <div className="flex flex-col" key={data.id}>
-        <Card sx={{ minWidth: 210, mr: 5, borderRadius: "10px" }}>
+        <Card className="rounded-xl min-w-[210px] md:min-w-[300px] mr-3">
           <div className="rounded-lg">
             <CardMedia
-              sx={{ height: 306 }}
-              image={`${data.imageUrl}`}
+              image={`${data.imgUrl}`}
               title="green iguana"
-              className="hover:shadow-xl"
+              className="hover:shadow-xl h-72 md:h-80"
             />
           </div>
         </Card>
