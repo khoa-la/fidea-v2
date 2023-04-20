@@ -645,6 +645,21 @@ video {
   margin-bottom: 1rem;
 }
 
+.mx-9 {
+  margin-left: 2.25rem;
+  margin-right: 2.25rem;
+}
+
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mb-0 {
   margin-bottom: 0px;
 }
@@ -825,6 +840,26 @@ video {
   height: 6rem;
 }
 
+.h-\[533px\] {
+  height: 533px;
+}
+
+.h-\[633px\] {
+  height: 633px;
+}
+
+.h-\[433px\] {
+  height: 433px;
+}
+
+.h-5\/6 {
+  height: 83.333333%;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
 .min-h-\[180px\] {
   min-height: 180px;
 }
@@ -909,6 +944,14 @@ video {
   width: 6rem;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
 .min-w-\[120px\] {
   min-width: 120px;
 }
@@ -943,6 +986,10 @@ video {
 
 .min-w-\[210px\] {
   min-width: 210px;
+}
+
+.min-w-\[250px\] {
+  min-width: 250px;
 }
 
 .max-w-\[200px\] {
@@ -1063,6 +1110,11 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
@@ -1110,6 +1162,16 @@ video {
 .bg-\[\#ECF1F4\] {
   --tw-bg-opacity: 1;
   background-color: rgb(236 241 244 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#235D55\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 93 85 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#8FB1BA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(143 177 186 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -1186,6 +1248,16 @@ video {
   padding-bottom: 0.25rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1216,6 +1288,10 @@ video {
 
 .pb-3 {
   padding-bottom: 0.75rem;
+}
+
+.pr-11 {
+  padding-right: 2.75rem;
 }
 
 .text-left {
@@ -1459,6 +1535,11 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
   .md\:mr-3 {
     margin-right: 0.75rem;
   }
@@ -1619,6 +1700,16 @@ video {
     font-size: 1rem;
     line-height: 1.5rem;
   }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1771,5 +1862,9 @@ video {
 
   .\32xl\:max-w-6xl {
     max-width: 72rem;
+  }
+
+  .\32xl\:items-center {
+    align-items: center;
   }
 }

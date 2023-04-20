@@ -355,3 +355,44 @@ export const roomOptionSlideItems = [
     description: "Retro",
   },
 ];
+
+export const bannerItems = [
+  {
+    id: 1,
+    title: "Shop By Style",
+    imgUrl: "/assets/items/banner-13.png",
+  },
+  {
+    id: 2,
+    title: "Shop By Brand",
+    imgUrl: "/assets/items/banner-14.png",
+  },
+  {
+    id: 3,
+    title: "Shop By Promotion",
+    imgUrl: "/assets/items/banner-15.png",
+  },
+];
+
+export const tipItems = [
+  {
+    id: 1,
+    title: "How to Choose Rug Style",
+    imgUrl: "/assets/items/banner-18.png",
+  },
+  {
+    id: 2,
+    title: "Small Space Ideas",
+    imgUrl: "/assets/items/banner-19.png",
+  },
+  {
+    id: 3,
+    title: "Decorate your bedroom",
+    imgUrl: "/assets/items/banner-20.png",
+  },
+  {
+    id: 4,
+    title: "Fabric Guide",
+    imgUrl: "/assets/items/banner-21.png",
+  },
+];

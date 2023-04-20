@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "../components/Carousel";
 import {
+  bannerItems,
   carouselItems,
   productBannerSlides,
   promotionItems,
@@ -17,6 +18,8 @@ import Banner2 from "../components/Banner2";
 import ProductSlide from "../components/ProductSlide";
 import RoomSlide from "../components/RoomSlide";
 import Banner3 from "../components/Banner3";
+import Banner4 from "../components/Banner4";
+import TipSlide from "../components/TipSlide";
 
 export default function Home() {
   return (
@@ -69,7 +72,13 @@ export default function Home() {
         <RoomSlide />
       </div>
       <div className="px-6 md:px-8 lg:px-16 w-full pt-6">
-        <Banner3 />
+        <Banner3 datas={bannerItems} />
+      </div>
+      <div className="w-full bg-black md:bg-inherit">
+        <Banner4 />
+      </div>
+      <div className="px-6 md:px-8 lg:px-16 w-full pt-6">
+        <TipSlide />
       </div>
     </>
   );
