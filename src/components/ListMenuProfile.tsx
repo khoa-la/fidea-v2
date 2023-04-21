@@ -11,11 +11,14 @@ import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import CloseIcon from "@mui/icons-material/Close";
-import { navLinks } from "../constants";
+import { bannerItems, navLinks, roomSlideItems } from "../constants";
+import RoomSlideItem from "./RoomSlideItem";
 
 export default function ListMenuProfile() {
   const [active, setActive] = useState("Home");
   const [openMenu, setOpenMenu] = useState(false);
+  const [openRooms, setOpenRooms] = useState(false);
+  const [openShopBy, setOpenShopBy] = useState(false);
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -139,7 +142,10 @@ export default function ListMenuProfile() {
             className={`font-medium cursor-pointer text-[18px] pt-3 ${
               active === "Rooms" ? "text-[#FBA31B]" : "text-black"
             }`}
-            onClick={() => handleClickMenu("Rooms")}
+            onClick={() => {
+              handleClickMenu("Rooms");
+              setOpenRooms(true);
+            }}
           >
             Rooms
           </li>
@@ -155,7 +161,10 @@ export default function ListMenuProfile() {
             className={`font-medium cursor-pointer text-[18px] pt-3 ${
               active === "Shop by" ? "text-[#FBA31B]" : "text-black"
             }`}
-            onClick={() => handleClickMenu("Shop by")}
+            onClick={() => {
+              handleClickMenu("Shop by");
+              setOpenShopBy(true);
+            }}
           >
             Shop by
           </li>
@@ -416,6 +425,57 @@ export default function ListMenuProfile() {
               </div>
             </div>
           </div>
+        </div>
+      </SwipeableDrawer>
+
+      <SwipeableDrawer
+        anchor="top"
+        open={openRooms}
+        onClose={() => setOpenRooms(false)}
+        onOpen={() => setOpenRooms(true)}
+        sx={{ zIndex: 99999 }}
+      >
+        <div className="flex items-end justify-end bg-[#F5F5F5]">
+          <IconButton
+            color="inherit"
+            component="button"
+            onClick={() => setOpenRooms(false)}
+          >
+            <CloseIcon sx={{ width: 32, height: 32 }} />
+          </IconButton>
+        </div>
+        <div className="w-full pb-3 flex flex-nowrap lg:justify-center overflow-hidden overflow-x-scroll">
+          {roomSlideItems?.map((data, index) => (
+            <RoomSlideItem data={data} />
+          ))}
+        </div>
+      </SwipeableDrawer>
+
+      <SwipeableDrawer
+        anchor="top"
+        open={openShopBy}
+        onClose={() => setOpenShopBy(false)}
+        onOpen={() => setOpenShopBy(true)}
+        sx={{ zIndex: 99999 }}
+      >
+        <div className="flex items-end justify-end bg-[#F5F5F5]">
+          <IconButton
+            color="inherit"
+            component="button"
+            onClick={() => setOpenShopBy(false)}
+          >
+            <CloseIcon sx={{ width: 32, height: 32 }} />
+          </IconButton>
+        </div>
+        <div className="w-full pb-3 flex flex-col md:flex-row items-center justify-center">
+          {bannerItems?.map((data) => (
+            <div className={`flex flex-col md:mr-3`} key={data.id}>
+              <img src={`${data.imgUrl}`} />
+              <button className="text-white text-2xl md:text-base bg-[#235D55] rounded-full px-6 py-5 my-6 mx-12 md:mx-2">
+                {data.title}
+              </button>
+            </div>
+          ))}
         </div>
       </SwipeableDrawer>
     </div>
