@@ -305,21 +305,25 @@ export const roomSlideItems = [
     id: 1,
     imgUrl: "/assets/items/room-10.png",
     title: "Living Room",
+    url: "/living-rooms",
   },
   {
     id: 2,
     imgUrl: "/assets/items/room-11.png",
     title: "Dining & Kitchen",
+    url: "/living-rooms",
   },
   {
     id: 3,
     imgUrl: "/assets/items/room-12.png",
     title: "Bedroom",
+    url: "/living-rooms",
   },
   {
     id: 4,
     imgUrl: "/assets/items/room-13.png",
     title: "Children Room",
+    url: "/living-rooms",
   },
 ];
 
@@ -394,5 +398,142 @@ export const tipItems = [
     id: 4,
     title: "Fabric Guide",
     imgUrl: "/assets/items/banner-21.png",
+  },
+];
+
+export const brandItems = [
+  {
+    id: 1,
+    imgUrl: "/assets/items/brand-1.png",
+  },
+  {
+    id: 2,
+    imgUrl: "/assets/items/brand-2.png",
+  },
+  {
+    id: 3,
+    imgUrl: "/assets/items/brand-3.png",
+  },
+  {
+    id: 4,
+    imgUrl: "/assets/items/brand-4.png",
+  },
+  {
+    id: 5,
+    imgUrl: "/assets/items/brand-5.png",
+  },
+  {
+    id: 6,
+    imgUrl: "/assets/items/brand-6.png",
+  },
+  {
+    id: 7,
+    imgUrl: "/assets/items/brand-7.png",
+  },
+  {
+    id: 8,
+    imgUrl: "/assets/items/brand-8.png",
+  },
+  {
+    id: 9,
+    imgUrl: "/assets/items/brand-9.png",
+  },
+  {
+    id: 10,
+    imgUrl: "/assets/items/brand-10.png",
+  },
+  {
+    id: 11,
+    imgUrl: "/assets/items/brand-11.png",
+  },
+  {
+    id: 12,
+    imgUrl: "/assets/items/brand-12.png",
+  },
+  {
+    id: 13,
+    imgUrl: "/assets/items/brand-13.png",
+  },
+  {
+    id: 14,
+    imgUrl: "/assets/items/brand-14.png",
+  },
+  {
+    id: 15,
+    imgUrl: "/assets/items/brand-15.png",
+  },
+  {
+    id: 16,
+    imgUrl: "/assets/items/brand-16.png",
+  },
+  {
+    id: 17,
+    imgUrl: "/assets/items/brand-17.png",
+  },
+  {
+    id: 18,
+    imgUrl: "/assets/items/brand-18.png",
+  },
+];
+
+export const livingRoomItems = [
+  {
+    id: 1,
+    imageUrl: "/assets/items/living-1.png",
+    altText: "",
+  },
+  {
+    id: 2,
+    imageUrl: "/assets/items/living-2.png",
+    altText: "",
+  },
+  {
+    id: 3,
+    imageUrl: "/assets/items/living-3.png",
+    altText: "",
+  },
+  {
+    id: 4,
+    imageUrl: "/assets/items/living-4.png",
+    altText: "",
+  },
+];
+
+export const livingRoomSlideItems = [
+  {
+    id: 1,
+    imgUrl: "/assets/items/living-5.png",
+    title: "All",
+    url: "/living-rooms",
+  },
+  {
+    id: 2,
+    imgUrl: "/assets/items/living-6.png",
+    title: "Scandinavian",
+    url: "/living-rooms",
+  },
+  {
+    id: 3,
+    imgUrl: "/assets/items/living-7.png",
+    title: "Minimalism",
+    url: "/living-rooms",
+  },
+  {
+    id: 4,
+    imgUrl: "/assets/items/living-8.png",
+    title: "Classic",
+    url: "/living-rooms",
+  },
+  {
+    id: 4,
+    imgUrl: "/assets/items/living-9.png",
+    title: "Rustic Style",
+    url: "/living-rooms",
+  },
+  {
+    id: 4,
+    imgUrl: "/assets/items/living-10.png",
+    title: "Retro",
+    url: "/living-rooms",
   },
 ];

@@ -2,13 +2,17 @@ import { Suspense, lazy, ElementType } from "react";
 import { Navigate, useRoutes, useLocation } from "react-router-dom";
 // layouts
 import MainLayout from "../layouts/main";
+import CircularProgress from "@mui/material/CircularProgress";
+import Box from "@mui/material/Box";
 
 // ----------------------------------------------------------------------
 
 const Loadable = (Component: ElementType) => (props: any) => {
-  const { pathname } = useLocation();
-
-  return <Component {...props} />;
+  return (
+    <Suspense fallback={""}>
+      <Component {...props} />
+    </Suspense>
+  );
 };
 
 export default function Router() {
@@ -18,7 +22,7 @@ export default function Router() {
       element: <MainLayout />,
       children: [
         { element: <Home />, index: true },
-        // { path: 'about-us', element: <About /> },
+        { path: "living-rooms", element: <LivingRoom /> },
         // { path: 'contact-us', element: <Contact /> },
         // { path: 'faqs', element: <Faqs /> },
       ],
@@ -29,3 +33,4 @@ export default function Router() {
 
 // MAIN
 const Home = Loadable(lazy(() => import("../pages/Home")));
+const LivingRoom = Loadable(lazy(() => import("../pages/LivingRoom")));

@@ -9,7 +9,7 @@ export default function RoomSlide() {
       <h2 className="text-center md:text-left py-4 text-xl font-light">
         SHOP BY ROOMS
       </h2>
-      <div className="w-full pb-3 flex flex-nowrap lg:justify-center overflow-hidden overflow-x-scroll">
+      <div className="w-full pb-3 flex flex-nowrap 2xl:justify-center overflow-hidden overflow-x-scroll">
         {roomSlideItems?.map((data, index) => (
           <RoomSlideItem data={data} />
         ))}

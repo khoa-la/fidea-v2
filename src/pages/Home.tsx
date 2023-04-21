@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "../components/Carousel";
 import {
   bannerItems,
+  brandItems,
   carouselItems,
   productBannerSlides,
   promotionItems,
@@ -20,6 +21,20 @@ import RoomSlide from "../components/RoomSlide";
 import Banner3 from "../components/Banner3";
 import Banner4 from "../components/Banner4";
 import TipSlide from "../components/TipSlide";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import {
+  Card,
+  CardMedia,
+  Divider,
+  InputAdornment,
+  TextField,
+} from "@mui/material";
+import BrandSlick from "../components/BrandSlick";
+import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -77,8 +92,14 @@ export default function Home() {
       <div className="w-full bg-black md:bg-inherit">
         <Banner4 />
       </div>
+      <div className="px-6 md:pl-8 lg:pl-16 w-full pt-6">
+        <BrandSlick />
+      </div>
       <div className="px-6 md:px-8 lg:px-16 w-full pt-6">
         <TipSlide />
+      </div>
+      <div className="px-6 md:px-8 lg:px-16 w-full pt-6 bg-[#235D55] flex flex-col items-center justify-between">
+        <Footer />
       </div>
     </>
   );

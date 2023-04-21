@@ -10,7 +10,7 @@ export default function ProductSlide() {
       <h2 className="text-center md:text-left py-4 text-xl font-light">
         SHOP BY CATEGORY
       </h2>
-      <div className="w-full flex flex-nowrap pb-3 lg:justify-center overflow-hidden overflow-x-scroll">
+      <div className="w-full flex flex-nowrap pb-3 2xl:justify-center overflow-hidden overflow-x-scroll">
         {productFilterSlides?.map((data, index) => (
           <ProductSlideItem data={data} />
         ))}
