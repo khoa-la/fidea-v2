@@ -2,6 +2,10 @@ import React from "react";
 import Carousel from "../components/Carousel";
 import { livingRoomItems, livingRoomSlideItems } from "../constants";
 import LivingRoomSlideItem from "../components/LivingRoomSlideItem";
+import LivingRoomProduct from "../components/LivingRoomProduct";
+import LivingRoomProductSlide from "../components/LivingRoomProductSlide";
+import TipSlide from "../components/TipSlide";
+import Footer from "../components/Footer";
 
 export default function LivingRoom() {
   return (
@@ -16,6 +20,7 @@ export default function LivingRoom() {
           />
         </div>
       </div>
+
       <div className="px-6 md:px-8 lg:px-16 w-full pt-6">
         <div className="text-center pb-6">
           <h2 className="text-center py-4 text-2xl font-bold">LIVING ROOMS</h2>
@@ -30,6 +35,22 @@ export default function LivingRoom() {
             <LivingRoomSlideItem data={data} />
           ))}
         </div>
+      </div>
+
+      <div className="px-6 md:px-8 lg:px-16 md:flex flex-col w-full md:bg-[#F4F1E9]">
+        <LivingRoomProduct />
+      </div>
+
+      <div className="px-6 md:px-8 lg:px-16 md:flex flex-col w-full md:bg-[#F4F1E9]">
+        <LivingRoomProductSlide />
+      </div>
+
+      <div className="px-6 md:px-8 lg:px-16 w-full pt-6">
+        <TipSlide />
+      </div>
+
+      <div className="px-6 md:px-8 lg:px-16 w-full pt-6 bg-[#235D55] flex flex-col items-center justify-between">
+        <Footer />
       </div>
     </>
   );

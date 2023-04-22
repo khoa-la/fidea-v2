@@ -8,15 +8,29 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+      /* you can also use 'auto' behaviour
+             in place of 'smooth' */
+    });
+  };
   return (
     <>
       <div className="w-full flex items-center justify-between py-3">
         <img src="assets/items/logo.png" />
         <div className="flex items-center justify-center">
-          <span className="hidden md:block text-white underline">
-            Back to top
-          </span>
-          <ArrowCircleUpIcon className="text-white" />
+          <button
+            className="flex items-center justify-center"
+            onClick={scrollToTop}
+          >
+            <span className="hidden md:block text-white underline">
+              Back to top
+            </span>
+
+            <ArrowCircleUpIcon className="text-white" />
+          </button>
         </div>
       </div>
       <div className="md:flex items-center justify-between md:pb-10 w-full">
