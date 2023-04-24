@@ -19,7 +19,7 @@ export default function SimpleCarousel({
   return (
     <div
       style={{ backgroundImage: `url(${imgUrl})`, ...style }}
-      className={`w-full h-[333px] sm:h-[500px] md:h-[400px] lg:h-[600px] 2xl:h-[1250px] rounded-2xl bg-center bg-cover group relative ${className}`}
+      className={`w-full h-[333px] sm:h-[500px] md:h-[400px] lg:h-[600px] 2xl:h-[950px] rounded-2xl bg-center bg-cover group relative ${className}`}
     >
       <div className="hidden group-hover:flex absolute h-32 sm:h-40 md:h-44 w-full bg-gray-300 opacity-80 bottom-0 rounded-3xl flex-col items-center justify-center">
         <div className="flex items-center justify-center p-2 max-w-[220px] sm:max-w-[270px]">

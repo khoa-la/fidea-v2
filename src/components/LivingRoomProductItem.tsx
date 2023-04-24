@@ -13,6 +13,7 @@ import {
 import React, { useState } from "react";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
   data?: any;
@@ -36,11 +37,13 @@ export default function LivingRoomProductItem({ data, key }: Props) {
     setOpenSnackbar(false);
   };
 
+  const navigate = useNavigate();
+
   return (
     <>
       <Grid item xs={6} md={6} lg={4} sx={{ mt: 2, mb: 4 }} key={key}>
         <Card className="w-80 lg:w-full mr-4">
-          <div className="relative">
+          <div className="relative" onClick={() => navigate(`${data.path}`)}>
             <CardMedia
               image={`${data.imgUrl}`}
               title="green iguana"

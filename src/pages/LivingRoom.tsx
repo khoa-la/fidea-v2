@@ -16,7 +16,7 @@ export default function LivingRoom() {
             items={livingRoomItems}
             autoplay
             interval={3000}
-            className="h-[222px] sm:h-[300px] md:h-[400px] lg:h-[600px] 2xl:h-[1250px] md:mr-3"
+            className="h-[222px] sm:h-[300px] md:h-[400px] lg:h-[600px] 2xl:h-[850px] md:mr-3"
           />
         </div>
       </div>

@@ -23,8 +23,8 @@ export default function Router() {
       children: [
         { element: <Home />, index: true },
         { path: "living-rooms", element: <LivingRoom /> },
-        // { path: 'contact-us', element: <Contact /> },
-        // { path: 'faqs', element: <Faqs /> },
+        { path: "living-room-details", element: <LivingRoomDetail /> },
+        { path: "shop-by-style", element: <ShopByStyle /> },
       ],
     },
     { path: "*", element: <Navigate to="/404" replace /> },
@@ -34,3 +34,7 @@ export default function Router() {
 // MAIN
 const Home = Loadable(lazy(() => import("../pages/Home")));
 const LivingRoom = Loadable(lazy(() => import("../pages/LivingRoom")));
+const LivingRoomDetail = Loadable(
+  lazy(() => import("../pages/LivingRoomDetail"))
+);
+const ShopByStyle = Loadable(lazy(() => import("../pages/ShopByStyle")));

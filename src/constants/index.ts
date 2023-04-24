@@ -365,16 +365,19 @@ export const bannerItems = [
     id: 1,
     title: "Shop By Style",
     imgUrl: "/assets/items/banner-13.png",
+    path: "/shop-by-style",
   },
   {
     id: 2,
     title: "Shop By Brand",
     imgUrl: "/assets/items/banner-14.png",
+    path: "/shop-by-brand",
   },
   {
     id: 3,
     title: "Shop By Promotion",
     imgUrl: "/assets/items/banner-15.png",
+    path: "/shop-by-promotion",
   },
 ];
 
@@ -552,6 +555,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $3402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 2,
@@ -560,6 +564,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $3402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 3,
@@ -568,6 +573,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 4,
@@ -576,6 +582,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5409",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 5,
@@ -584,6 +591,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 6,
@@ -592,6 +600,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 7,
@@ -600,6 +609,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 8,
@@ -608,6 +618,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
     ],
   },
@@ -624,6 +635,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $3402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 10,
@@ -632,6 +644,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $3402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 11,
@@ -640,6 +653,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 12,
@@ -648,6 +662,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5409",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 13,
@@ -656,6 +671,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 14,
@@ -664,6 +680,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 15,
@@ -672,6 +689,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 16,
@@ -680,6 +698,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
     ],
   },
@@ -696,6 +715,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $3402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 18,
@@ -704,6 +724,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $3602",
         brand: "/assets/items/brand-1.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 19,
@@ -712,6 +733,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5402",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 20,
@@ -720,6 +742,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5409",
         brand: "/assets/items/brand-4.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 21,
@@ -728,6 +751,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5402",
         brand: "/assets/items/brand-1.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 22,
@@ -736,6 +760,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5402",
         brand: "/assets/items/brand-1.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 23,
@@ -744,6 +769,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5402",
         brand: "/assets/items/brand-1.png",
         stars: 125,
+        path: "/living-room-details",
       },
       {
         id: 24,
@@ -752,6 +778,7 @@ export const livingRoomProductItems = [
         description: "Buy all for $5402",
         brand: "/assets/items/brand-1.png",
         stars: 125,
+        path: "/living-room-details",
       },
     ],
   },
@@ -821,5 +848,23 @@ export const livingRoomProductSlideItems = [
     description: "Buy all for $5402",
     brand: "/assets/items/brand-4.png",
     stars: 125,
+  },
+];
+
+export const styleBannerSlides = [
+  {
+    id: 1,
+    imageUrl: "/assets/items/style-banner-1.png",
+    altText: "",
+  },
+  {
+    id: 2,
+    imageUrl: "/assets/items/style-banner-1.png",
+    altText: "",
+  },
+  {
+    id: 3,
+    imageUrl: "/assets/items/style-banner-1.png",
+    altText: "",
   },
 ];

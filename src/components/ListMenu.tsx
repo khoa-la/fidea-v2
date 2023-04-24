@@ -5,6 +5,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import BrandSlick from "./BrandSlick";
 import RoomSlide from "./RoomSlide";
 import RoomSlideItem from "./RoomSlideItem";
+import { useNavigate } from "react-router-dom";
 
 export default function ListMenu() {
   const [active, setActive] = useState("Home");
@@ -14,6 +15,7 @@ export default function ListMenu() {
   const handleClick = (e: string) => {
     setActive(e);
   };
+  const navigate = useNavigate();
   return (
     <>
       <ul className="list-none hidden md:flex justify-start items-center mx-2">
@@ -29,16 +31,16 @@ export default function ListMenu() {
         </li>
       ))} */}
         <li
-          className={`font-medium cursor-pointer text-[16px] mr-5 ${
-            active === "Home" ? "text-[#FBA31B]" : "text-black"
+          className={`font-medium cursor-pointer text-[20px] mr-5 ${
+            active === "Home" ? "text-[#FBA31B]" : "text-white"
           }`}
           onClick={() => handleClick("Home")}
         >
           <a href={`/`}>Home</a>
         </li>
         <li
-          className={`font-medium cursor-pointer text-[16px] mr-5 ${
-            active === "Products" ? "text-[#FBA31B]" : "text-black"
+          className={`font-medium cursor-pointer text-[20px] mr-5 ${
+            active === "Products" ? "text-[#FBA31B]" : "text-white"
           }`}
           onClick={() => {
             handleClick("Products");
@@ -48,8 +50,8 @@ export default function ListMenu() {
           Products
         </li>
         <li
-          className={`font-medium cursor-pointer text-[16px] mr-5 ${
-            active === "Rooms" ? "text-[#FBA31B]" : "text-black"
+          className={`font-medium cursor-pointer text-[20px] mr-5 ${
+            active === "Rooms" ? "text-[#FBA31B]" : "text-white"
           }`}
           onClick={() => {
             handleClick("Rooms");
@@ -59,16 +61,16 @@ export default function ListMenu() {
           Rooms
         </li>
         <li
-          className={`font-medium cursor-pointer text-[16px] mr-5 ${
-            active === "Ideas" ? "text-[#FBA31B]" : "text-black"
+          className={`font-medium cursor-pointer text-[20px] mr-5 ${
+            active === "Ideas" ? "text-[#FBA31B]" : "text-white"
           }`}
           onClick={() => handleClick("Ideas")}
         >
           Ideas
         </li>
         <li
-          className={`font-medium cursor-pointer text-[16px] mr-5 ${
-            active === "Shop by" ? "text-[#FBA31B]" : "text-black"
+          className={`font-medium cursor-pointer text-[20px] mr-5 ${
+            active === "Shop by" ? "text-[#FBA31B]" : "text-white"
           }`}
           onClick={() => {
             handleClick("Shop by");
@@ -405,7 +407,10 @@ export default function ListMenu() {
           {bannerItems?.map((data) => (
             <div className={`flex flex-col md:mr-3`} key={data.id}>
               <img src={`${data.imgUrl}`} />
-              <button className="text-white text-2xl md:text-base bg-[#235D55] rounded-full px-6 py-5 my-6 mx-12 md:mx-2">
+              <button
+                onClick={() => navigate(`${data.path}`)}
+                className="text-white text-2xl md:text-base bg-[#235D55] rounded-full px-6 py-5 my-6 mx-12 md:mx-2"
+              >
                 {data.title}
               </button>
             </div>

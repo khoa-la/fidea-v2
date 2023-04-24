@@ -45,7 +45,7 @@ export default function Home() {
             items={carouselItems}
             autoplay
             interval={3000}
-            className="h-[522px] sm:h-[500px] md:h-[400px] lg:h-[600px] 2xl:h-[1250px] md:mr-3"
+            className="h-[522px] sm:h-[500px] md:h-[400px] lg:h-[600px] 2xl:h-[950px] md:mr-3"
           />
         </div>
         <div className="flex items-center justify-between w-full pt-6 md:py-0">

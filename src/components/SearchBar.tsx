@@ -15,7 +15,7 @@ export default function SearchBar() {
           // width: 440,
           // minWidth: 250,
         }}
-        className="xl:w-[500px] 2xl:w-[800px] "
+        className="xl:w-[500px] 2xl:w-[500px] bg-white "
         InputProps={{
           startAdornment: (
             <InputAdornment position="start">
