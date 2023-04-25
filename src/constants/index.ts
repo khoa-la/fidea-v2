@@ -371,13 +371,13 @@ export const bannerItems = [
     id: 2,
     title: "Shop By Brand",
     imgUrl: "/assets/items/banner-14.png",
-    path: "/shop-by-brand",
+    path: "/shop-by-style",
   },
   {
     id: 3,
     title: "Shop By Promotion",
     imgUrl: "/assets/items/banner-15.png",
-    path: "/shop-by-promotion",
+    path: "/shop-by-style",
   },
 ];
 

@@ -158,10 +158,10 @@ export default function ShopByStyle() {
         <div className="px-6 md:px-8 lg:px-16 w-full pt-6">
           <TipSlide />
         </div>
+      </div>
 
-        <div className="px-6 md:px-8 lg:px-16 w-full pt-6 bg-[#235D55] flex flex-col items-center justify-between">
-          <Footer />
-        </div>
+      <div className="px-6 md:px-8 lg:px-16 w-full pt-6 bg-[#235D55] flex flex-col items-center justify-between">
+        <Footer />
       </div>
     </>
   );

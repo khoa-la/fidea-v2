@@ -99,10 +99,10 @@ export default function LivingRoomDetail() {
         </div>
       </div>
 
-      <div className="px-6 md:px-8 lg:px-16 w-full pt-6">
+      <div className="px-6 md:px-8 lg:px-16 w-full pt-6 flex flex-col items-center justify-center">
         <h2 className="text-center py-4 text-3xl">List of Products</h2>
-        <div className="flex flex-col md:flex-row items-center justify-center md:justify-around">
-          <div className="w-full flex items-center justify-around">
+        <div className="flex flex-col items-center justify-center">
+          <div className="w-full flex items-center justify-center">
             <div className="relative">
               <img src="/assets/items/sofa-1.png" />
               <div className="absolute w-[53px] h-[75px] top-0 left-0 text-center items-center flex flex-col justify-center">
@@ -113,29 +113,6 @@ export default function LivingRoomDetail() {
             </div>
             <div className="w-full flex flex-col items-start justify-start md:justify-end">
               <h2 className="text-sm">Salento Linen Napkins</h2>
-              {/* <div className="flex items-center justify-between">
-              
-              <div className="flex items-end justify-center">
-                <a>View more</a>
-                <div>
-                  <svg
-                    width="27"
-                    height="26"
-                    viewBox="0 0 27 26"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M25.2713 14.0549C25.6011 13.7722 25.766 13.6309 25.8264 13.4627C25.8795 13.3151 25.8795 13.1536 25.8264 13.006C25.766 12.8378 25.6011 12.6964 25.2713 12.4137L13.8274 2.60469C13.2597 2.11807 12.9758 1.87476 12.7355 1.8688C12.5267 1.86362 12.3271 1.95538 12.1951 2.11733C12.0433 2.30368 12.0433 2.67755 12.0433 3.42529V9.22814C9.15934 9.73267 6.51988 11.194 4.55839 13.3882C2.41993 15.7803 1.23702 18.876 1.23535 22.0846V22.9114C2.653 21.2036 4.42302 19.8224 6.42418 18.8624C8.18849 18.0161 10.0957 17.5147 12.0433 17.3826V23.0433C12.0433 23.7911 12.0433 24.165 12.1951 24.3513C12.3271 24.5133 12.5267 24.605 12.7355 24.5998C12.9758 24.5939 13.2597 24.3506 13.8274 23.8639L25.2713 14.0549Z"
-                      stroke="black"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div> */}
               <p className="text-red-500 text-lg font-bold">$351.64</p>
               <div className="w-full flex flex-col items-start justify-start">
                 <p>Color</p>
@@ -164,43 +141,363 @@ export default function LivingRoomDetail() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className=" w-full flex flex-col items-start justify-start">
-            <div className=" hidden md:flex items-start justify-start">
-              <a className="text-xs">View more</a>
-              <div className="text-xs">
-                <svg
-                  width="27"
-                  height="26"
-                  viewBox="0 0 27 26"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M25.2713 14.0549C25.6011 13.7722 25.766 13.6309 25.8264 13.4627C25.8795 13.3151 25.8795 13.1536 25.8264 13.006C25.766 12.8378 25.6011 12.6964 25.2713 12.4137L13.8274 2.60469C13.2597 2.11807 12.9758 1.87476 12.7355 1.8688C12.5267 1.86362 12.3271 1.95538 12.1951 2.11733C12.0433 2.30368 12.0433 2.67755 12.0433 3.42529V9.22814C9.15934 9.73267 6.51988 11.194 4.55839 13.3882C2.41993 15.7803 1.23702 18.876 1.23535 22.0846V22.9114C2.653 21.2036 4.42302 19.8224 6.42418 18.8624C8.18849 18.0161 10.0957 17.5147 12.0433 17.3826V23.0433C12.0433 23.7911 12.0433 24.165 12.1951 24.3513C12.3271 24.5133 12.5267 24.605 12.7355 24.5998C12.9758 24.5939 13.2597 24.3506 13.8274 23.8639L25.2713 14.0549Z"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+
+            <div className=" w-full flex flex-col items-start justify-start">
+              <div className=" hidden md:flex items-start justify-start">
+                <a className="text-xs">View more</a>
+                <div className="text-xs">
+                  <svg
+                    width="27"
+                    height="26"
+                    viewBox="0 0 27 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25.2713 14.0549C25.6011 13.7722 25.766 13.6309 25.8264 13.4627C25.8795 13.3151 25.8795 13.1536 25.8264 13.006C25.766 12.8378 25.6011 12.6964 25.2713 12.4137L13.8274 2.60469C13.2597 2.11807 12.9758 1.87476 12.7355 1.8688C12.5267 1.86362 12.3271 1.95538 12.1951 2.11733C12.0433 2.30368 12.0433 2.67755 12.0433 3.42529V9.22814C9.15934 9.73267 6.51988 11.194 4.55839 13.3882C2.41993 15.7803 1.23702 18.876 1.23535 22.0846V22.9114C2.653 21.2036 4.42302 19.8224 6.42418 18.8624C8.18849 18.0161 10.0957 17.5147 12.0433 17.3826V23.0433C12.0433 23.7911 12.0433 24.165 12.1951 24.3513C12.3271 24.5133 12.5267 24.605 12.7355 24.5998C12.9758 24.5939 13.2597 24.3506 13.8274 23.8639L25.2713 14.0549Z"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div className="flex items-start justify-start">
+                <div className="flex items-center justify-start">
+                  <RemoveCircleOutlineIcon />
+                  <input
+                    value={1}
+                    className="text-center w-10 border border-black"
                   />
-                </svg>
+                  <AddCircleOutlineIcon />
+                  <button className="bg-[#235D55] px-6 py-1 rounded-full text-white">
+                    Pay now
+                  </button>
+                </div>
               </div>
             </div>
-            <div className="flex items-start justify-start">
-              <div className="flex items-center justify-start">
-                <RemoveCircleOutlineIcon />
-                <input className="w-10 border border-black" />
-                <AddCircleOutlineIcon />
-                <button className="bg-[#235D55] px-6 py-1 rounded-full">
-                  Pay now
-                </button>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center justify-center">
+          <div className="w-full flex items-center justify-center">
+            <div className="relative">
+              <img src="/assets/items/sofa-1.png" />
+              <div className="absolute w-[53px] h-[75px] top-0 left-0 text-center items-center flex flex-col justify-center">
+                <div className="text-center items-center">
+                  <img src="/assets/items/brand-1.png" />
+                </div>
+              </div>
+            </div>
+            <div className="w-full flex flex-col items-start justify-start md:justify-end">
+              <h2 className="text-sm">Salento Linen Napkins</h2>
+              <p className="text-red-500 text-lg font-bold">$351.64</p>
+              <div className="w-full flex flex-col items-start justify-start">
+                <p>Color</p>
+                <div className="flex items-center justify-center">
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-[#FBA31B] mr-3"></div>
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-black mr-3"></div>
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-[#E1DEC4] mr-3"></div>
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-[#774F39] mr-3"></div>
+                </div>
+              </div>
+              <div className="w- full flex flex-col items-start justify-start">
+                <div className="flex items-start justify-start">
+                  <span className="font-bold mr-2">Size: </span>
+                  <span className="font-light">Set of 8 </span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <button className="rounded-full bg-white border mr-1 px-2 py-1 md:px-5 text-xs">
+                    Set of 4
+                  </button>
+                  <button className="rounded-full bg-[#235D55] mr-1 px-2 py-1 md:px-5 text-xs text-white">
+                    Set of 8
+                  </button>
+                  <button className="rounded-full bg-white border mr-1 px-2 py-1 md:px-5 text-xs">
+                    Set of 12
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className=" w-full flex flex-col items-start justify-start">
+              <div className=" hidden md:flex items-start justify-start">
+                <a className="text-xs">View more</a>
+                <div className="text-xs">
+                  <svg
+                    width="27"
+                    height="26"
+                    viewBox="0 0 27 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25.2713 14.0549C25.6011 13.7722 25.766 13.6309 25.8264 13.4627C25.8795 13.3151 25.8795 13.1536 25.8264 13.006C25.766 12.8378 25.6011 12.6964 25.2713 12.4137L13.8274 2.60469C13.2597 2.11807 12.9758 1.87476 12.7355 1.8688C12.5267 1.86362 12.3271 1.95538 12.1951 2.11733C12.0433 2.30368 12.0433 2.67755 12.0433 3.42529V9.22814C9.15934 9.73267 6.51988 11.194 4.55839 13.3882C2.41993 15.7803 1.23702 18.876 1.23535 22.0846V22.9114C2.653 21.2036 4.42302 19.8224 6.42418 18.8624C8.18849 18.0161 10.0957 17.5147 12.0433 17.3826V23.0433C12.0433 23.7911 12.0433 24.165 12.1951 24.3513C12.3271 24.5133 12.5267 24.605 12.7355 24.5998C12.9758 24.5939 13.2597 24.3506 13.8274 23.8639L25.2713 14.0549Z"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div className="flex items-start justify-start">
+                <div className="flex items-center justify-start">
+                  <RemoveCircleOutlineIcon />
+                  <input
+                    value={1}
+                    className="text-center w-10 border border-black"
+                  />
+                  <AddCircleOutlineIcon />
+                  <button className="bg-[#235D55] px-6 py-1 rounded-full text-white">
+                    Pay now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center justify-center">
+          <div className="w-full flex items-center justify-center">
+            <div className="relative">
+              <img src="/assets/items/sofa-1.png" />
+              <div className="absolute w-[53px] h-[75px] top-0 left-0 text-center items-center flex flex-col justify-center">
+                <div className="text-center items-center">
+                  <img src="/assets/items/brand-1.png" />
+                </div>
+              </div>
+            </div>
+            <div className="w-full flex flex-col items-start justify-start md:justify-end">
+              <h2 className="text-sm">Salento Linen Napkins</h2>
+              <p className="text-red-500 text-lg font-bold">$351.64</p>
+              <div className="w-full flex flex-col items-start justify-start">
+                <p>Color</p>
+                <div className="flex items-center justify-center">
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-[#FBA31B] mr-3"></div>
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-black mr-3"></div>
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-[#E1DEC4] mr-3"></div>
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-[#774F39] mr-3"></div>
+                </div>
+              </div>
+              <div className="w- full flex flex-col items-start justify-start">
+                <div className="flex items-start justify-start">
+                  <span className="font-bold mr-2">Size: </span>
+                  <span className="font-light">Set of 8 </span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <button className="rounded-full bg-white border mr-1 px-2 py-1 md:px-5 text-xs">
+                    Set of 4
+                  </button>
+                  <button className="rounded-full bg-[#235D55] mr-1 px-2 py-1 md:px-5 text-xs text-white">
+                    Set of 8
+                  </button>
+                  <button className="rounded-full bg-white border mr-1 px-2 py-1 md:px-5 text-xs">
+                    Set of 12
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className=" w-full flex flex-col items-start justify-start">
+              <div className=" hidden md:flex items-start justify-start">
+                <a className="text-xs">View more</a>
+                <div className="text-xs">
+                  <svg
+                    width="27"
+                    height="26"
+                    viewBox="0 0 27 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25.2713 14.0549C25.6011 13.7722 25.766 13.6309 25.8264 13.4627C25.8795 13.3151 25.8795 13.1536 25.8264 13.006C25.766 12.8378 25.6011 12.6964 25.2713 12.4137L13.8274 2.60469C13.2597 2.11807 12.9758 1.87476 12.7355 1.8688C12.5267 1.86362 12.3271 1.95538 12.1951 2.11733C12.0433 2.30368 12.0433 2.67755 12.0433 3.42529V9.22814C9.15934 9.73267 6.51988 11.194 4.55839 13.3882C2.41993 15.7803 1.23702 18.876 1.23535 22.0846V22.9114C2.653 21.2036 4.42302 19.8224 6.42418 18.8624C8.18849 18.0161 10.0957 17.5147 12.0433 17.3826V23.0433C12.0433 23.7911 12.0433 24.165 12.1951 24.3513C12.3271 24.5133 12.5267 24.605 12.7355 24.5998C12.9758 24.5939 13.2597 24.3506 13.8274 23.8639L25.2713 14.0549Z"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div className="flex items-start justify-start">
+                <div className="flex items-center justify-start">
+                  <RemoveCircleOutlineIcon />
+                  <input
+                    value={1}
+                    className="text-center w-10 border border-black"
+                  />
+                  <AddCircleOutlineIcon />
+                  <button className="bg-[#235D55] px-6 py-1 rounded-full text-white">
+                    Pay now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center justify-center">
+          <div className="w-full flex items-center justify-center">
+            <div className="relative">
+              <img src="/assets/items/sofa-1.png" />
+              <div className="absolute w-[53px] h-[75px] top-0 left-0 text-center items-center flex flex-col justify-center">
+                <div className="text-center items-center">
+                  <img src="/assets/items/brand-1.png" />
+                </div>
+              </div>
+            </div>
+            <div className="w-full flex flex-col items-start justify-start md:justify-end">
+              <h2 className="text-sm">Salento Linen Napkins</h2>
+              <p className="text-red-500 text-lg font-bold">$351.64</p>
+              <div className="w-full flex flex-col items-start justify-start">
+                <p>Color</p>
+                <div className="flex items-center justify-center">
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-[#FBA31B] mr-3"></div>
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-black mr-3"></div>
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-[#E1DEC4] mr-3"></div>
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-[#774F39] mr-3"></div>
+                </div>
+              </div>
+              <div className="w- full flex flex-col items-start justify-start">
+                <div className="flex items-start justify-start">
+                  <span className="font-bold mr-2">Size: </span>
+                  <span className="font-light">Set of 8 </span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <button className="rounded-full bg-white border mr-1 px-2 py-1 md:px-5 text-xs">
+                    Set of 4
+                  </button>
+                  <button className="rounded-full bg-[#235D55] mr-1 px-2 py-1 md:px-5 text-xs text-white">
+                    Set of 8
+                  </button>
+                  <button className="rounded-full bg-white border mr-1 px-2 py-1 md:px-5 text-xs">
+                    Set of 12
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className=" w-full flex flex-col items-start justify-start">
+              <div className=" hidden md:flex items-start justify-start">
+                <a className="text-xs">View more</a>
+                <div className="text-xs">
+                  <svg
+                    width="27"
+                    height="26"
+                    viewBox="0 0 27 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25.2713 14.0549C25.6011 13.7722 25.766 13.6309 25.8264 13.4627C25.8795 13.3151 25.8795 13.1536 25.8264 13.006C25.766 12.8378 25.6011 12.6964 25.2713 12.4137L13.8274 2.60469C13.2597 2.11807 12.9758 1.87476 12.7355 1.8688C12.5267 1.86362 12.3271 1.95538 12.1951 2.11733C12.0433 2.30368 12.0433 2.67755 12.0433 3.42529V9.22814C9.15934 9.73267 6.51988 11.194 4.55839 13.3882C2.41993 15.7803 1.23702 18.876 1.23535 22.0846V22.9114C2.653 21.2036 4.42302 19.8224 6.42418 18.8624C8.18849 18.0161 10.0957 17.5147 12.0433 17.3826V23.0433C12.0433 23.7911 12.0433 24.165 12.1951 24.3513C12.3271 24.5133 12.5267 24.605 12.7355 24.5998C12.9758 24.5939 13.2597 24.3506 13.8274 23.8639L25.2713 14.0549Z"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div className="flex items-start justify-start">
+                <div className="flex items-center justify-start">
+                  <RemoveCircleOutlineIcon />
+                  <input
+                    value={1}
+                    className="text-center w-10 border border-black"
+                  />
+                  <AddCircleOutlineIcon />
+                  <button className="bg-[#235D55] px-6 py-1 rounded-full text-white">
+                    Pay now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center justify-center">
+          <div className="w-full flex items-center justify-center">
+            <div className="relative">
+              <img src="/assets/items/sofa-1.png" />
+              <div className="absolute w-[53px] h-[75px] top-0 left-0 text-center items-center flex flex-col justify-center">
+                <div className="text-center items-center">
+                  <img src="/assets/items/brand-1.png" />
+                </div>
+              </div>
+            </div>
+            <div className="w-full flex flex-col items-start justify-start md:justify-end">
+              <h2 className="text-sm">Salento Linen Napkins</h2>
+              <p className="text-red-500 text-lg font-bold">$351.64</p>
+              <div className="w-full flex flex-col items-start justify-start">
+                <p>Color</p>
+                <div className="flex items-center justify-center">
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-[#FBA31B] mr-3"></div>
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-black mr-3"></div>
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-[#E1DEC4] mr-3"></div>
+                  <div className="w-5 h-5 md:w-9 md:h-9 rounded-full bg-[#774F39] mr-3"></div>
+                </div>
+              </div>
+              <div className="w- full flex flex-col items-start justify-start">
+                <div className="flex items-start justify-start">
+                  <span className="font-bold mr-2">Size: </span>
+                  <span className="font-light">Set of 8 </span>
+                </div>
+                <div className="flex items-center justify-center">
+                  <button className="rounded-full bg-white border mr-1 px-2 py-1 md:px-5 text-xs">
+                    Set of 4
+                  </button>
+                  <button className="rounded-full bg-[#235D55] mr-1 px-2 py-1 md:px-5 text-xs text-white">
+                    Set of 8
+                  </button>
+                  <button className="rounded-full bg-white border mr-1 px-2 py-1 md:px-5 text-xs">
+                    Set of 12
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className=" w-full flex flex-col items-start justify-start">
+              <div className=" hidden md:flex items-start justify-start">
+                <a className="text-xs">View more</a>
+                <div className="text-xs">
+                  <svg
+                    width="27"
+                    height="26"
+                    viewBox="0 0 27 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M25.2713 14.0549C25.6011 13.7722 25.766 13.6309 25.8264 13.4627C25.8795 13.3151 25.8795 13.1536 25.8264 13.006C25.766 12.8378 25.6011 12.6964 25.2713 12.4137L13.8274 2.60469C13.2597 2.11807 12.9758 1.87476 12.7355 1.8688C12.5267 1.86362 12.3271 1.95538 12.1951 2.11733C12.0433 2.30368 12.0433 2.67755 12.0433 3.42529V9.22814C9.15934 9.73267 6.51988 11.194 4.55839 13.3882C2.41993 15.7803 1.23702 18.876 1.23535 22.0846V22.9114C2.653 21.2036 4.42302 19.8224 6.42418 18.8624C8.18849 18.0161 10.0957 17.5147 12.0433 17.3826V23.0433C12.0433 23.7911 12.0433 24.165 12.1951 24.3513C12.3271 24.5133 12.5267 24.605 12.7355 24.5998C12.9758 24.5939 13.2597 24.3506 13.8274 23.8639L25.2713 14.0549Z"
+                      stroke="black"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div className="flex items-start justify-start">
+                <div className="flex items-center justify-start">
+                  <RemoveCircleOutlineIcon />
+                  <input
+                    value={1}
+                    className="text-center w-10 border border-black"
+                  />
+                  <AddCircleOutlineIcon />
+                  <button className="bg-[#235D55] px-6 py-1 rounded-full text-white">
+                    Pay now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="w-full bg-black md:bg-inherit">
+      <div className="w-full bg-black md:bg-inherit mt-6">
         <div
           style={{ backgroundImage: `url(/assets/items/banner-22.png)` }}
           className={`w-full h-full bg-center bg-cover group relative flex flex-col items-start justify-center py-6 md:py-9 lg:py-14 px-3 md:px-10`}
