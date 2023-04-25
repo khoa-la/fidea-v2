@@ -25,6 +25,7 @@ export default function Router() {
         { path: "living-rooms", element: <LivingRoom /> },
         { path: "living-room-details", element: <LivingRoomDetail /> },
         { path: "shop-by-style", element: <ShopByStyle /> },
+        { path: "cart", element: <Cart /> },
       ],
     },
     { path: "*", element: <Navigate to="/404" replace /> },
@@ -38,3 +39,4 @@ const LivingRoomDetail = Loadable(
   lazy(() => import("../pages/LivingRoomDetail"))
 );
 const ShopByStyle = Loadable(lazy(() => import("../pages/ShopByStyle")));
+const Cart = Loadable(lazy(() => import("../pages/Cart")));
